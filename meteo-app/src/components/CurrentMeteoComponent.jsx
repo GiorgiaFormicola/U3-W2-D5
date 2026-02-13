@@ -57,6 +57,7 @@ const CurrentMeteoComponent = function (props) {
               </div>
             </Col>
             <Col
+              style={{ cursor: "pointer" }}
               xs={12}
               md={6}
               lg={4}
