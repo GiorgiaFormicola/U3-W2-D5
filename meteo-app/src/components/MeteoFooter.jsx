@@ -2,7 +2,6 @@ import Nav from "react-bootstrap/Nav";
 import { Link, useLocation } from "react-router-dom";
 const MeteoFooter = function () {
   const location = useLocation();
-  console.log(location);
   return (
     <footer>
       <Nav className="justify-content-center d-flex flex-column align-items-center bg-primary">

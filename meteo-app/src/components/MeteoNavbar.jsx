@@ -14,7 +14,7 @@ const MeteoNavbar = function () {
           </Link>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" className="border-light" />
           <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="ms-auto me-2">
+            <Nav className="ms-auto">
               <Link to="/" className={location.pathname === "/" ? "nav-link active" : "nav-link"}>
                 Homepage
               </Link>

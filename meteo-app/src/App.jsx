@@ -6,16 +6,18 @@ import MeteoHeader from "./components/MeteoHeader";
 function App() {
   return (
     <>
-      <BrowserRouter>
-        <MeteoHeader />
-        {/* <Routes>
+      <div className="vh-100 bg-primary-subtle">
+        <BrowserRouter>
+          <MeteoHeader />
+          {/* <Routes>
           <Route path="/" element={<MeteoHome />} />
           <Route path="/details/:city" element={<MeteoDetails />} />
           <Route path="*" element={<MeteoNotFound />} />
         </Routes>
          */}
-        <MeteoFooter />
-      </BrowserRouter>
+          <MeteoFooter />
+        </BrowserRouter>
+      </div>
     </>
   );
 }
