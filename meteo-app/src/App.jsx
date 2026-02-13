@@ -1,19 +1,20 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import MeteoNavbar from "./components/MeteoNavbar";
+import MeteoFooter from "./components/MeteoFooter";
+import MeteoHeader from "./components/MeteoHeader";
 
 function App() {
   return (
     <>
       <BrowserRouter>
-        <MeteoNavbar />
-        {/* <MeteoWelcome /> */}
+        <MeteoHeader />
         {/* <Routes>
           <Route path="/" element={<MeteoHome />} />
           <Route path="/details/:city" element={<MeteoDetails />} />
           <Route path="*" element={<MeteoNotFound />} />
         </Routes>
-        <MeteoFooter /> */}
+         */}
+        <MeteoFooter />
       </BrowserRouter>
     </>
   );
