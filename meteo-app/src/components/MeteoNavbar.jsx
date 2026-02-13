@@ -8,7 +8,7 @@ const MeteoNavbar = function () {
   return (
     <nav>
       <Navbar collapseOnSelect expand="lg" bg="primary" data-bs-theme="dark">
-        <Container fluid>
+        <Container fluid className="my-2">
           <Link to="/" className="navbar-brand">
             Meteo-App
           </Link>

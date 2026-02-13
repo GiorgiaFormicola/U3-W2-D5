@@ -4,7 +4,7 @@ const MeteoFooter = function () {
   const location = useLocation();
   return (
     <footer>
-      <Nav className="justify-content-center d-flex flex-column align-items-center bg-primary">
+      <Nav className="justify-content-center d-flex flex-column align-items-center bg-primary pt-1">
         <Nav.Item>
           <Link to={location.pathname} className="nav-link link-light">
             Go to top

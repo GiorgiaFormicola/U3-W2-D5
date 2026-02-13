@@ -7,7 +7,7 @@ import MeteoHome from "./components/MeteoHome";
 function App() {
   return (
     <>
-      <div className="vh-100 bg-primary-subtle d-flex flex-column">
+      <div className="min-vh-100 bg-primary-subtle d-flex flex-column justify-content-center">
         <BrowserRouter>
           <MeteoHeader />
           <Routes>

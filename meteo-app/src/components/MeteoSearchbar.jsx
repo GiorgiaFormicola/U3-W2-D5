@@ -14,7 +14,7 @@ const MeteoSearchbar = function (props) {
   return (
     <section>
       <Container fluid>
-        <Alert className=" border-3">
+        <Alert className=" border-3 mb-0">
           <h2 className="text-center text-secondary mb-3">Search the city you want to have info about</h2>
           <Form
             onSubmit={(e) => {
