@@ -2,7 +2,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 const apiKey = "1f6d80a9f986d3ef0f8760677fe6965f";
 
 const MeteoDetails = function () {
@@ -10,6 +10,7 @@ const MeteoDetails = function () {
   const [error, setError] = useState(false);
   const [forecast, setForecast] = useState(null);
 
+  const navigate = useNavigate();
   const params = useParams();
   const forecastURL = `https://api.openweathermap.org/data/2.5/forecast?q=${params.city},${params.country}&appid=${apiKey}`;
   console.log(forecastURL);
@@ -33,6 +34,7 @@ const MeteoDetails = function () {
         console.log("ERROR", error);
         setLoading(false);
         setError(true);
+        navigate("/error");
       });
   };
 

@@ -16,6 +16,7 @@ function App() {
             <Route path="/" element={<MeteoHome />} />
             <Route path="/details/:city/:country" element={<MeteoDetails />} />
             <Route path="*" element={<MeteoNotFound />} />
+            <Route path="/error" element={<MeteoNotFound />} />
           </Routes>
 
           <MeteoFooter />

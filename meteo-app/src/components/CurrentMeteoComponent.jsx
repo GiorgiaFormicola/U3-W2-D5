@@ -28,6 +28,7 @@ const CurrentMeteoComponent = function (props) {
         console.log("ERROR", error);
         setLoading(false);
         setError(true);
+        navigate("/error");
       });
   };
 
