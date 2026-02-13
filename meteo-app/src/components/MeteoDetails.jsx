@@ -56,7 +56,7 @@ const MeteoDetails = function () {
             {forecast.list.map((element) => {
               return (
                 <>
-                  <Col xs={12} sm={6} md={4} lg={3} xl={2} className="bg-primary bg-opacity-25 rounded-3 py-3 text-center shadow-sm">
+                  <Col xs={12} sm={6} md={4} lg={3} xl={2} className="bg-primary bg-opacity-25 rounded-3 py-3 text-center shadow-sm" key={element.dt}>
                     <h6 className="">
                       Date and time: <br />
                       {element.dt_txt}
