@@ -1,11 +1,13 @@
+import { useLocation } from "react-router-dom";
 import MeteoNavbar from "./MeteoNavbar";
 import MeteoWelcome from "./MeteoWelcome";
 
 const MeteoHeader = function () {
+  const location = useLocation();
   return (
     <header>
       <MeteoNavbar />
-      <MeteoWelcome />
+      {location.pathname === "/" && <MeteoWelcome />}
     </header>
   );
 };

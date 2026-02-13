@@ -18,9 +18,6 @@ const MeteoNavbar = function () {
               <Link to="/" className={location.pathname === "/" ? "nav-link active" : "nav-link"}>
                 Homepage
               </Link>
-              <Link to="/your-city" className={location.pathname === "/your-city" ? "nav-link active" : "nav-link"}>
-                Your city
-              </Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

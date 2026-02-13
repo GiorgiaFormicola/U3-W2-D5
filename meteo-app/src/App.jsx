@@ -3,6 +3,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MeteoFooter from "./components/MeteoFooter";
 import MeteoHeader from "./components/MeteoHeader";
 import MeteoHome from "./components/MeteoHome";
+import MeteoDetails from "./components/MeteoDetails";
+import MeteoNotFound from "./components/MeteoNotFound";
 
 function App() {
   return (
@@ -12,8 +14,8 @@ function App() {
           <MeteoHeader />
           <Routes>
             <Route path="/" element={<MeteoHome />} />
-            {/* <Route path="/details/:city" element={<MeteoDetails />} />
-          <Route path="*" element={<MeteoNotFound />} /> */}
+            <Route path="/details/:city/:country" element={<MeteoDetails />} />
+            <Route path="*" element={<MeteoNotFound />} />
           </Routes>
 
           <MeteoFooter />
