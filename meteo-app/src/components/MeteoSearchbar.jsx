@@ -41,7 +41,7 @@ const MeteoSearchbar = function (props) {
                 <Form.Control
                   required
                   type="text"
-                  placeholder="Type the country code here..."
+                  placeholder="Type the country here..."
                   className=" mr-sm-2"
                   value={countryCode}
                   onChange={(e) => {
